@@ -1,0 +1,22 @@
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>ResourceURI</th>
+            <th>StartYear</th>
+            <th>EndYear</th>
+            <th>Modified</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="active-row" *ngFor="let serie of series">
+            <td>{{serie.id}}</td>
+            <td>{{serie.title}}</td>
+            <td>{{serie.resourceURI}}</td>
+            <td>{{serie.startYear}}</td>
+            <td>{{serie.endYear}}</td>
+            <td>{{serie.modified | formatDate}}</td>
+        </tr>
+    </tbody>
+</table>
