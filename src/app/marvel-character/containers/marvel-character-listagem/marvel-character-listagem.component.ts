@@ -10,14 +10,18 @@ import { MarvelCharacterApi } from '../../api/marvel-character.api';
 export class MarvelCharacterListagemComponent implements OnInit {
 
   allCharacters!: Observable<any>;
-  
+
   constructor(private api: MarvelCharacterApi) { }
 
   ngOnInit(): void {
-    this.api.getAllCharacters().subscribe(res =>{
+    this.getCharacters();
+  }
+
+  private getCharacters() {
+    this.api.getAllCharacters().subscribe(res => {
       this.allCharacters = res;
-      console.log(res);
-    })
+    });
+
   }
 
 }
