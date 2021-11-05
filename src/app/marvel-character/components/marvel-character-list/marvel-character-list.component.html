@@ -1,0 +1,10 @@
+<table>
+    <tbody>
+        <ng-container *ngFor="let character of characters">
+            <tr>
+                <td>{{character.name}}</td>
+                <td><img src={{character.thumbnail.path}}.{{character.thumbnail.extension}}></td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
