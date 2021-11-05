@@ -1,0 +1,16 @@
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Modified</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="active-row" *ngFor="let cosmic of cosmics">
+            <td>{{cosmic.id}}</td>
+            <td>{{cosmic.title}}</td>
+            <td>{{cosmic.modified | formatDate}}</td>
+        </tr>
+    </tbody>
+</table>
