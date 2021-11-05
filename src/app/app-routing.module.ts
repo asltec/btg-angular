@@ -12,9 +12,12 @@ const routes: Routes = [
   }, {
     path: 'marvel-character',
     loadChildren: () => import('./marvel-character/marvel-character.module').then(m => m.MarvelCharacterModule)
-  },{
+  }, {
     path: 'marvel-cosmics',
     loadChildren: () => import('./marvel-cosmics/marvel-cosmics.module').then(m => m.MarvelCosmicsModule)
+  }, {
+    path: 'marvel-series',
+    loadChildren: () => import('./marvel-series/marvel-series.module').then(m => m.MarvelSeriesModule)
   }
 
 ];
