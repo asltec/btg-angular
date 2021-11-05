@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #212329;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
