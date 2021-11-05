@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://gateway.marvel.com/v1/public/characters?ts=1636063717&apikey=f7ae8ad508e93f0d9abe1502d0755727&hash=48892a9651be0bc38190cfcb0f39c485&limit=6'
+  API_MARVEL_CHARACTERS: 'http://gateway.marvel.com/v1/public/characters?ts=1636063717&apikey=f7ae8ad508e93f0d9abe1502d0755727&hash=48892a9651be0bc38190cfcb0f39c485&limit=6',
+  API_MARVEL_SERIES: 'http://gateway.marvel.com/v1/public/series?ts=1636063717&apikey=f7ae8ad508e93f0d9abe1502d0755727&hash=48892a9651be0bc38190cfcb0f39c485&limit=6',
+  API_MARVEL_COSMICS: 'http://gateway.marvel.com/v1/public/comics?ts=1636063717&apikey=f7ae8ad508e93f0d9abe1502d0755727&hash=48892a9651be0bc38190cfcb0f39c485&limit=6'
+
 };
 
 /*
